@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SheepSpawner : MonoBehaviour
 {
     public bool canSpawn = true; // 1
@@ -30,6 +31,16 @@ public class SheepSpawner : MonoBehaviour
         GameObject sheep = Instantiate(sheepPrefab, randomPosition, sheepPrefab.transform.rotation); // 2
         sheepList.Add(sheep); // 3
         sheep.GetComponent<Sheep>().SetSpawner(this); // 4
+        IncreaseSpawn();
+    }
+    public void IncreaseSpawn()
+    {
+        if (timeBetweenSpawns > 1)
+        {
+            timeBetweenSpawns = timeBetweenSpawns - 0.05f;
+        }
+        
+
     }
 
 
