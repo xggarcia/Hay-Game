@@ -122,11 +122,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334d77aad0c8a9d499b02ac6176461a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 23
+  horizontalBoundary: 22
+  shootInterval: 0.8
   hayBalePrefab: {fileID: 5944836638906277110, guid: 4ea788b41f4556240870330c4fb2e023,
     type: 3}
   haySpawnpoint: {fileID: 1855226494}
-  shootInterval: 0.8
-  movementSpeed: 23
+  modelParent: {fileID: 4397208863869895446}
+  blueModelPrefab: {fileID: 100000, guid: 0d729ea02e055de449c21c288a41bb32, type: 3}
+  yellowModelPrefab: {fileID: 100000, guid: 0a87953750e4d784690043bdd32b94d9, type: 3}
+  redModelPrefab: {fileID: 100000, guid: b4f50c31a0c63154ca4085fca6898cbb, type: 3}
 --- !u!1001 &1980520476685283717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134,6 +139,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2709791935418197139}
     m_Modifications:
+    - target: {fileID: 2942092869753855845, guid: 7928344c9a39fbd4eb4c957288e1140b,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3216923365951500492, guid: 7928344c9a39fbd4eb4c957288e1140b,
         type: 3}
       propertyPath: m_Name
@@ -209,6 +219,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2709791935418197139}
     m_Modifications:
+    - target: {fileID: 2942092869753855845, guid: 7928344c9a39fbd4eb4c957288e1140b,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3216923365951500492, guid: 7928344c9a39fbd4eb4c957288e1140b,
         type: 3}
       propertyPath: m_Name
