@@ -1313,7 +1313,7 @@ MonoBehaviour:
   - {fileID: 1466748440}
   - {fileID: 403510313}
   - {fileID: 929110350}
-  timeBetweenSpawns: 5
+  timeBetweenSpawns: 3.5
 --- !u!4 &1678374853
 Transform:
   m_ObjectHideFlags: 0
